@@ -1,0 +1,23 @@
+.header-menu {
+  margin-top: 2.6rem;
+  font-family: 'manrope', sans-serif;
+  font-weight: 500;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+
+    &--link {
+      font-size: 1.4rem;
+      color: $color-black-1b;
+      opacity: .4;
+    }
+  }
+}
