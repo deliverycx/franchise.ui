@@ -1,3 +1,9 @@
-@import "./fonts";
-@import "globals";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
+@import "base/base";
+@import "base/fonts";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/header";
