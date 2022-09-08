@@ -1,0 +1,83 @@
+.business-for {
+  margin-top: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  .text-prim {
+    font-family: 'pf', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 120%;
+    color: $color-blue-2;
+  }
+  .text-sec {
+    @include text-secondary($color-grey8F);
+    margin-top: 3rem;
+    &.second {
+      margin-top: 2rem;
+    }
+  }
+
+  .picture-block {
+    background-image: url("/assets/img/business-for.svg");
+  }
+
+  .solid-block {
+    background-color: $color-blue-2;
+    border-radius: 20px;
+    color: $color-white;
+    font-family: 'manrope', sans-serif;
+
+    .block-text {
+      margin-left: 3rem;
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .icon {
+      margin: 3rem;
+    }
+
+    .icon-lamp {
+      margin: 3rem 3rem 2rem;
+    }
+
+    &--heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.6rem;
+      line-height: 120%;
+      margin-bottom: 2rem;
+    }
+
+    &--secondary {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  .request-block {
+    background-image: url("/assets/img/open-picture.svg");
+
+    .block-text {
+      color: $color-white;
+      font-family: 'manrope', sans-serif;
+      margin-left: 3rem;
+      height: 77%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .main-btn {
+      @include links-btn($color-black-1b, $color-white);
+      padding: 1.6rem 5.3rem;
+      margin-left: 3rem;
+    }
+  }
+}
+

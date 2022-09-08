@@ -13,3 +13,12 @@
   font-weight: 600;
   line-height: 140%;
 }
+
+@mixin text-secondary($textColor){
+  font-family: 'manrope', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: $textColor;
+}
