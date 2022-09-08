@@ -12,7 +12,7 @@ export function MainInfo() {
                 <div className="main__text-secondary">
                     Станьте владельцем уютной хинкальной <br/>по франшизе с прибылю 4.5 млн рублей в год
                 </div>
-                <a href="#" className="main-btn">Получить бизнес-план</a>
+                <a href="#" className="main-btn header-btn">Получить бизнес-план</a>
                 <div className="main__rewards"></div>
             </div>
             <div className="main__video">

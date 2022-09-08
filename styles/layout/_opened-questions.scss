@@ -1,0 +1,32 @@
+.opened-question {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &--main {
+      font-family: 'manrope', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 120%;
+      color: #1B1725;
+    }
+    &--sub {
+      margin-top: 2rem;
+      font-family: 'manrope', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 140%;
+      color: #1B1725;
+      opacity: 0.6;
+    }
+    &--btn {
+      @include links-btn($color-white, $color-blue-bg);
+      margin-top: 7rem;
+    }
+  }
+}

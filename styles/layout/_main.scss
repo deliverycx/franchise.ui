@@ -22,7 +22,8 @@
     opacity: 0.6;
   }
 
-  .main-btn {
+  .header-btn {
+    @include links-btn($color-white, $color-blue-bg);
     margin-top: 5rem;
   }
 
