@@ -1,0 +1,37 @@
+.financial-model {
+  margin-top: 15rem;
+
+  &__title--main {
+    font-family: 'pf', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 120%;
+    color: $color-blue-2;
+  }
+
+  &__title--sub {
+    font-family: 'manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 140%;
+    margin-top: .5rem;
+    color: #88888F;
+  }
+
+  &__blocks {
+    margin-top: 4rem;
+
+    .info-block {
+      width: 39rem;
+      height: 28rem;
+      border: .1rem solid rgba(0,0,0,0.3);
+      border-radius: 2rem;
+
+      .icon {
+        margin: 3.5rem;
+      }
+    }
+  }
+}
