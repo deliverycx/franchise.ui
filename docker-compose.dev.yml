@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+    proxy:
+        image: docker/proxy
+        build: ./proxy
+        container_name: proxy
+        volumes:
+            - ./proxy/nginx:/etc/nginx/conf.d
+            - ./certbot/conf:/etc/letsencrypt
+            - ./certbot/www:/var/www/certbot
+            
+        ports:
+            - "80:80"
+            - "443:443"
+        depends_on: 
+           - franchise
+        command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"   
+        networks:
+          - mynetwork
+    franchise:
+        image: docker/franchise_frontend
+        container_name: franchise_frontend
+        build:
+            context: ./
+        ports:
+          - "7000:7000"
+        networks:
+          - mynetwork
+          - jenkinstwork
+    certbot:
+      image: certbot/certbot
+      restart: unless-stopped
+      volumes:
+        - ./certbot/conf:/etc/letsencrypt
+        - ./certbot/www:/var/www/certbot
+      entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+networks:
+  mynetwork:
+    external:
+      name: delivglobalnetwork           
+  jenkinstwork:
+      external:
+        name: jenkins 
+            
