@@ -5,19 +5,47 @@
 
   .container {
     display: flex;
-    justify-content: space-between;
   }
 
-  &__navigation {
+  &__navigation-bar {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
-    align-items: center;
+    width: 100%;
+    margin-left: 6rem;
+
+    &--navigation {
+      display: flex;
+      width: 70%;
+      align-items: center;
+    }
 
     &--link {
-      font-size: 1.4rem;
+      margin-left: 3rem;
+      font-size: 1.6rem;
       color: $color-black-1b;
-      opacity: .4;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 125%;
+    }
+    &--contact {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+
+      .phone {
+        font-family: 'manrope', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 125%;
+        color: $color-red-main;
+      }
+
+      .telegram {
+        margin-left: 3rem;
+        width: 2.4rem;
+        height: 2rem;
+        background-image: url("/assets/icons/telegram.svg");
+      }
     }
   }
 }

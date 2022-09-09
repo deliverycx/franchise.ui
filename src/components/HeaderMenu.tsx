@@ -33,11 +33,17 @@ export function HeaderMenu() {
                 <div className="header-menu__logo">
                     <img src='/assets/img/logo.svg' className="logo" alt="Логотип"/>
                 </div>
-                <nav className="header-menu__navigation">
-                    <div className="header-menu__navigation--link">Команда</div>
-                    <div className="header-menu__navigation--link">Доставка</div>
-                    <div className="header-menu__navigation--link">Контакты</div>
-                </nav>
+                <div className="header-menu__navigation-bar">
+                    <nav className="header-menu__navigation-bar--navigation">
+                        <div className="header-menu__navigation-bar--link">Команда</div>
+                        <div className="header-menu__navigation-bar--link">Доставка</div>
+                        <div className="header-menu__navigation-bar--link">Контакты</div>
+                    </nav>
+                    <div className="header-menu__navigation-bar--contact">
+                        <span className="phone">+7 978 062 52 81</span>
+                        <span className="telegram"></span>
+                    </div>
+                </div>
             </div>
         </header>
     )
