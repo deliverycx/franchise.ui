@@ -1,0 +1,69 @@
+.fixed_ask{
+  position: fixed;
+  bottom: 10%;
+  width: 13.5rem;
+  height: 6rem;
+  right: 16%;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+
+  &__wrap{
+    position: relative;
+  }
+  &__call-self{
+    font-family: 'manrope', sans-serif;
+    font-size: 1.6rem;
+    color: $color-blue-bg;
+    margin-bottom: 1.5rem;
+  }
+  &__contact{
+    font-size: 2.4rem;
+    font-family: 'manrope', sans-serif;
+    text-decoration: none !important;
+    margin-bottom: 3rem;
+    display: block;
+  }
+  &__circle{
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.ask{
+      background-color: $color-red-main;
+      background-image: url("/assets/icons/message.svg");
+    }
+    &.call{
+      background-color: $color-yellow;
+      background-image: url("/assets/icons/call.svg");
+    }
+  }
+}
+
+.checkbox_label{
+  display: flex;
+  color: #666666;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 120%;
+  text-align: left;
+  input[type="checkbox"]{
+    display: none;
+  }
+  input:checked + .custom_checkbox{
+    background-image: url("/assets/img/icons/check.svg");
+    background-repeat: no-repeat;
+    background-size: 1.75rem 1.4rem;
+    background-position: center;
+  }
+  .custom_checkbox{
+    margin-right: 1.6rem;
+    min-width: 3rem;
+    border: .2rem solid #cccccc;
+    height: 3rem;
+    border-radius: .6rem;
+  }
+}

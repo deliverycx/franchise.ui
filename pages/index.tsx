@@ -4,6 +4,7 @@ import {MainInfo} from "../src/components/MainInfo";
 import {FinancialModel} from "../src/components/FinancialModel";
 import {OpenedToQuestions} from "../src/components/OpenedToQuestions";
 import {BusinessFor} from "../src/components/BusinessFor";
+import FixedAsk from '../src/components/fixed-ask';
 
 const Home: NextPage = () => {
     return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
             <FinancialModel/>
             <OpenedToQuestions/>
             <BusinessFor/>
+            <FixedAsk />
         </>
     )
 }

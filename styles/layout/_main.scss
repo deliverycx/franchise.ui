@@ -1,6 +1,48 @@
 .main {
   margin-top: 6.9rem;
 
+  .container {
+    display: flex;
+
+    .main-picture-block {
+      margin-left: auto;
+      position: relative;
+
+      .info-block {
+        position: absolute;
+        background-color: $color-greyF1;
+        min-width: 37.6rem;
+        padding: 3.5rem;
+        border-radius: 2rem;
+        display: flex;
+        left: -25%;
+        top: 50%;
+
+        > div {
+          margin-left: 3.5rem;
+        }
+
+        &--title {
+          font-family: 'manrope', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 4.2rem;
+          line-height: 120%;
+          color: $color-black-1b;
+        }
+
+        &--secondary {
+          font-family: 'manrope', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 140%;
+          color: $color-grey8F;
+        }
+      }
+    }
+  }
+
   &__text-primary {
     font-family: 'manrope', sans-serif;
     font-weight: 500;
@@ -28,9 +70,39 @@
   }
 
   &__rewards {
-    margin-top: 3.2rem;
-    height: 5.1rem;
-    background-color: grey;
+    display: flex;
+
+    &--reward {
+      display: flex;
+      margin-right: 3.5rem;
+
+      .wreath {
+        display: inline-block;
+        background-image: url("/assets/icons/wreath.svg");
+        background-repeat: no-repeat;
+        width: 4.5rem ;
+        height:4rem ;
+      }
+
+      .reward-descr {
+        margin-left: 1.5rem;
+        color: $color-grey8F;
+        font-family: 'manrope', sans-serif;
+        font-style: normal;
+
+        .title {
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 140%;
+        }
+
+        .secondary {
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 130%;
+        }
+      }
+    }
   }
 
   &__video {
