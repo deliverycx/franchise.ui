@@ -1,0 +1,24 @@
+.our-help {
+  display: flex;
+  margin-top: 15rem;
+
+  &__description {
+    margin-left: 6.6rem;
+
+    &--title {
+      @include block-title($color-black-1b);
+    }
+
+    &--sub {
+      @include text-secondary($color-black-1b);
+      opacity: .6;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .main-btn {
+      @include links-btn($color-white, $color-blue-bg);
+      margin-top: 7rem;
+    }
+  }
+}
