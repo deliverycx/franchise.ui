@@ -1,0 +1,84 @@
+.about-company {
+  padding-top: 15rem;
+  background-color: $color-blue-bg;
+
+  &__heading {
+    display: flex;
+
+    &--title {
+      @include text-primary($color-white);
+    }
+
+    &--sub {
+      @include text-secondary($color-white);
+    }
+
+    &__quote-container {
+      position: relative;
+
+      .quote {
+        font-family: 'manrope', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 120%;
+        color: $color-white;
+        margin-left: 14.8rem;
+        margin-top: 3rem;
+      }
+
+      .quotes-up {
+        position: absolute;
+        top: 22px;
+        left: 96px;
+      }
+
+      .quotes-down {
+        position: absolute;
+        bottom: -5px;
+        right: -38px;
+      }
+    }
+  }
+
+  &__map {
+    width: 120rem;
+    height: 55rem;
+    background-color: $color-grey8F;
+    margin-top: 4rem;
+    border-radius: 2rem;
+  }
+
+  &__public {
+    margin-top: 15rem;
+    display: flex;
+
+    &--openness, &--qa {
+      .title {
+        @include block-title($color-white);
+      }
+
+      .sub {
+        @include block-sub-txt($color-white);
+        margin-top: 1.5rem;
+      }
+
+      .link-container {
+        margin-top: 3rem;
+
+        .link {
+          font-family: 'manrope', sans-serif;
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 130%;
+          text-decoration-line: underline;
+          color: $color-white;
+          margin-left: 1.4rem;
+        }
+      }
+    }
+    &--qa {
+      margin-left: 11.4rem;
+    }
+  }
+}

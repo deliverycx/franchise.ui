@@ -27,7 +27,9 @@
 
     .info-block {
       display: flex;
-      margin-bottom: 7.5rem;
+      &:not(:last-child) {
+        margin-bottom: 7.5rem;
+      }
 
       .info {
         margin-left: 3rem;

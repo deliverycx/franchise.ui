@@ -7,6 +7,7 @@ import {BusinessFor} from "../src/components/BusinessFor";
 import FixedAsk from '../src/components/fixed-ask';
 import FranchiseTerms from "../src/components/FranchiseTerms";
 import OurHelp from "../src/components/OurHelp";
+import AboutCompany from "../src/components/AboutCompany";
 
 const Home: NextPage = () => {
     return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
             <OpenedToQuestions/>
             <BusinessFor/>
             <OurHelp/>
+            <AboutCompany/>
             <FixedAsk />
         </>
     )
