@@ -1,0 +1,129 @@
+.franch-terms {
+  margin-top: 15rem;
+
+  &__title {
+    @include text-primary($color-blue-2);
+
+    &--sub {
+      margin-top: .5rem;
+      @include text-secondary($color-grey8F)
+    }
+  }
+
+  &__blocks {
+    margin-top: 4rem;
+  }
+
+  &__blocks-up {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &--contribution {
+      border: 1px solid rgba($color-black-1b, .3);
+      border-radius: 2rem;
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 3.5rem;
+
+      .money {
+        @include main-cost($color-black-1b);
+        opacity: 1;
+      }
+
+      .line {
+        @include block-line($color-black-1b);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .sub-text {
+        @include block-sub-txt($color-black-1b);
+      }
+    }
+
+    &--picture {
+      width: 66%;
+    }
+  }
+
+  &__blocks-down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+
+    &--invest {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-color: $color-blue-2;
+      width: 32%;
+      border-radius: 2rem;
+      padding: 6.4rem 3.5rem 3.5rem;
+
+      .money {
+        @include block-cost($color-white)
+      }
+      .line {
+        @include block-line($color-white);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .sub-text {
+        @include block-sub-txt($color-white);
+      }
+    }
+
+    &--payback {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 32%;
+      border-radius: 2rem;
+      padding: 6.4rem 3.5rem 3.5rem;
+      border: 1px solid rgba($color-black-1b, .3);
+
+      .duration {
+        @include block-cost($color-black-1b);
+      }
+
+      .line {
+        @include block-line($color-black-1b);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        opacity: 0.3;
+      }
+
+      .sub-text {
+        @include block-sub-txt($color-black-1b);
+      }
+    }
+
+    &--royalty {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 32%;
+      border-radius: 2rem;
+      padding: 6.4rem 3.5rem 3.5rem;
+      border: 1px solid rgba($color-black-1b, .3);
+
+      .percent {
+        @include block-cost($color-black-1b);
+      }
+
+      .line {
+        @include block-line($color-black-1b);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        opacity: 0.3;
+      }
+
+      .sub-text {
+        @include block-sub-txt($color-black-1b);
+      }
+    }
+  }
+}

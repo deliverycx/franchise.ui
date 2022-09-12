@@ -14,6 +14,15 @@
   line-height: 140%;
 }
 
+@mixin text-primary($textColor){
+  font-family: 'pf', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 120%;
+  color: $textColor;
+}
+
 @mixin text-secondary($textColor){
   font-family: 'manrope', sans-serif;
   font-style: normal;
@@ -21,4 +30,38 @@
   font-size: 18px;
   line-height: 140%;
   color: $textColor;
+}
+
+@mixin main-cost($textColor) {
+  font-family: 'manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.2rem;
+  line-height: 120%;
+  color: $textColor;
+}
+
+@mixin block-cost($textColor) {
+  font-family: 'manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 120%;
+  color: $textColor;
+}
+
+@mixin block-sub-txt($textColor) {
+  font-family: 'manrope', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 140%;
+  color: $textColor;
+}
+
+@mixin block-line($line-color){
+  width: 100%;
+  height: .1rem;
+  background: $line-color;
+  opacity: 0.3;
 }

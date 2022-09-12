@@ -2,12 +2,7 @@
   margin-top: 15rem;
 
   &__title--main {
-    font-family: 'pf', serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 6rem;
-    line-height: 120%;
-    color: $color-blue-2;
+    @include text-primary($color-blue-2);
   }
 
   &__title--sub {
