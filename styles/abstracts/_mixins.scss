@@ -27,7 +27,7 @@
   font-family: 'manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 140%;
   color: $textColor;
 }
@@ -41,7 +41,7 @@
   color: $textColor;
 }
 
-@mixin block-cost($textColor) {
+@mixin block-title($textColor) {
   font-family: 'manrope', sans-serif;
   font-style: normal;
   font-weight: 600;

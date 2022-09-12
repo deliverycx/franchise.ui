@@ -64,7 +64,7 @@
       padding: 6.4rem 3.5rem 3.5rem;
 
       .money {
-        @include block-cost($color-white)
+        @include block-title($color-white)
       }
       .line {
         @include block-line($color-white);
@@ -86,7 +86,7 @@
       border: 1px solid rgba($color-black-1b, .3);
 
       .duration {
-        @include block-cost($color-black-1b);
+        @include block-title($color-black-1b);
       }
 
       .line {
@@ -111,7 +111,7 @@
       border: 1px solid rgba($color-black-1b, .3);
 
       .percent {
-        @include block-cost($color-black-1b);
+        @include block-title($color-black-1b);
       }
 
       .line {
