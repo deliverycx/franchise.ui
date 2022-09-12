@@ -63,7 +63,7 @@ export function MainInfo() {
                 <iframe
                     id="existing-iframe-example"
                     width="100%" height="900"
-                    src="https://www.youtube.com/embed/fmsiLPKVYVY?autoplay=1&mute=1&enablejsapi=1"
+                    src="https://www.youtube.com/embed/fmsiLPKVYVY?autoplay=1&loop=1&mute=1&enablejsapi=1&playlist=fmsiLPKVYVY"
                     frameBorder="0"
                 ></iframe>
             </div>
