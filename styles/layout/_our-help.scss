@@ -1,6 +1,8 @@
 .our-help {
   display: flex;
   margin-top: 15rem;
+  margin-bottom: 15rem;
+  width: 120rem !important;
 
   &__description {
     margin-left: 6.6rem;
@@ -17,7 +19,7 @@
     }
 
     .main-btn {
-      @include links-btn($color-white, $color-blue-bg);
+      @include links-btn($color-white, $color-blue-2);
       margin-top: 7rem;
     }
   }

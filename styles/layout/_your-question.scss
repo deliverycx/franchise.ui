@@ -1,0 +1,70 @@
+.your-questions {
+  display: flex;
+  padding-top: 15rem;
+  width: 120rem !important;
+
+  &__container {
+    margin-top: 15rem;
+    width: 100%;
+    height: 54.5rem;
+    position: relative;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+      background-image: url("../../public/assets/img/hink-table.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    width: 50%;
+    z-index: 5;
+
+    &--title {
+      @include block-title($color-blue-2);
+    }
+
+    &--sub {
+      @include text-secondary($color-black-1b);
+      margin-top: 3.8rem;
+    }
+  }
+
+  &__form {
+    margin-left: 9.4rem;
+    z-index: 10;
+
+    &--phone {
+      margin-top: 4rem;
+    }
+    .label-check {
+      font-family: 'manrope', sans-serif;
+      margin-left: 1rem;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 140%;
+      color: $color-grey8F;
+
+      a {
+        text-decoration: underline;
+        color: $color-black-1b;
+        margin-left: .5rem;
+      }
+    }
+    .main-btn {
+      @include links-btn($color-white, $color-blue-2);
+      margin-top: 3.2rem;
+    }
+  }
+}
+
+

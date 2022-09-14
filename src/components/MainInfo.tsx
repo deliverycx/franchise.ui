@@ -28,7 +28,7 @@ export function MainInfo() {
             <div className="container">
                 <div className="main-info">
                     <h1 className="main__text-primary">Самая крупная <br/>
-                        <span className="main__text-primary--highlight"><b>сетей хинкальных</b> </span>
+                        <span className="main__text-primary--highlight"><b>сеть хинкальных</b> </span>
                         <br/>в России
                     </h1>
                     <div className="main__text-secondary">

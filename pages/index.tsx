@@ -10,6 +10,7 @@ import OurHelp from "../src/components/OurHelp";
 import AboutCompany from "../src/components/AboutCompany";
 import Team from "../src/components/Team";
 import FAQ from "../src/components/FAQ";
+import YourQuestion from "../src/components/YourQuestion";
 
 const Home: NextPage = () => {
     return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
             <AboutCompany/>
             <Team/>
             <FAQ/>
+            <YourQuestion/>
             <FixedAsk />
         </>
     )

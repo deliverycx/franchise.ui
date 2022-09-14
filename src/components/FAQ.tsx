@@ -55,8 +55,10 @@ const Faq = () => {
                     questionObjects.map(el => {
                         return <div key={el.id} className="faq__questions-blocks--block">
                             <div className="question">{el.question}</div>
-                            <div className="answer">{el.answer}</div>
-                            <div className="sub-text">{el.sub1} <br/> {el.sub2}</div>
+                            <div className="answer-sub">
+                                <div className="answer">{el.answer}</div>
+                                <div className="sub-text">{el.sub1} <br/> {el.sub2}</div>
+                            </div>
                         </div>
                     })
                 }

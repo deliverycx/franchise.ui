@@ -1,5 +1,6 @@
 .financial-model {
   margin-top: 15rem;
+  width: 120rem !important;
 
   &__title--main {
     @include text-primary($color-blue-2);
@@ -43,6 +44,7 @@
             position: absolute;
             top: 0;
             overflow: visible;
+            width: 6.9rem
           }
         }
         .sub {
@@ -54,9 +56,9 @@
     }
   }
   &__right-block {
-    width: 30%;
+    width: 33%;
     padding: 3.5rem;
-    background-color: $color-blue-bg;
+    background-color: $color-blue-2;
     border-radius: 2rem;
 
     .top-text {
@@ -80,7 +82,7 @@
       }
 
       .main-btn {
-        @include links-btn($color-blue-bg, $color-white);
+        @include links-btn($color-blue-2, $color-white);
         margin-top: 3.5rem;
       }
     }

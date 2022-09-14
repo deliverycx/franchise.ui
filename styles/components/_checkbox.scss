@@ -1,0 +1,51 @@
+.form-checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox']:checked + label .check-mark {
+  visibility: visible;
+  animation: check .2s;
+}
+
+input[type='checkbox']:not(:checked) + label .check-mark {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.checkbox {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1em;
+  position: relative;
+  border: 1px solid $color-grey8F;
+}
+
+label a{
+  font-size: 1.3rem;
+  color: #fff;
+  font-family: 'manrope', sans-serif;
+  font-weight: 500;
+}
+
+.check-mark {
+  position: absolute;
+  bottom: 1rem;
+  left: .2rem;
+  display: block;
+  width: .8rem;
+  height: 1.3rem;
+  border-bottom: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+}
+
+.form-checkbox-container {
+  margin-top: 3rem;
+}

@@ -2,6 +2,8 @@
   margin-top: 15rem;
   display: flex;
   justify-content: space-between;
+  width: 120rem !important;
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -25,7 +27,7 @@
       opacity: 0.6;
     }
     &--btn {
-      @include links-btn($color-white, $color-blue-bg);
+      @include links-btn($color-white, $color-blue-2);
       margin-top: 7rem;
     }
   }

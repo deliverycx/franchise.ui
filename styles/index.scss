@@ -1,5 +1,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/animations";
 
 @import "base/base";
 @import "base/fonts";
@@ -8,13 +9,16 @@
 @import "components/button";
 @import "components/header-menu";
 @import "components/fixed-ask";
-@import "components/franch-terms";
-@import "components/our-help";
-@import "components/about-company";
-@import "components/team";
-@import "components/faq";
+@import "components/animated-input";
+@import "components/checkbox";
 
 @import "layout/main";
 @import "layout/financial";
 @import "layout/opened-questions";
 @import "layout/business-for";
+@import "layout/franch-terms";
+@import "layout/our-help";
+@import "layout/about-company";
+@import "layout/team";
+@import "layout/faq";
+@import "layout/your-question";

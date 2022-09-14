@@ -1,0 +1,31 @@
+@keyframes check {
+  0% {
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+  }
+
+  10% {
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+  }
+
+  30% {
+    width: .7rem;
+    height: 0;
+    border-right: 4px solid transparent;
+  }
+
+  40% {
+    width: .7rem;
+    height: 0;
+    border-right: 4px solid transparent;
+  }
+
+  50% {
+    width: .7rem;
+    height: 1.4rem;
+    border-right: 4px solid $color-white;
+  }
+}
